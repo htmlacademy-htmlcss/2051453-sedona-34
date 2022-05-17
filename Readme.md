@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артем Демченко](https://up.htmlacademy.ru/htmlcss/34/user/2051453).
-* Наставник: `Artur Litovko`.
+* Наставник: [Artur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
