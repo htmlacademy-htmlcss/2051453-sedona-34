@@ -11,55 +11,58 @@
   <header class="page-header">
     <nav class="navigation">
       <img class="logo" src="images/header-case/logo_sedona.svg" width="139" height="70" alt="Логотип Седоны">
-      <menu class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link navigation-link-current">Главная</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
-      </menu>
-      <menu class="navigation-list navigation-user">
-        <li class="navigation-item"><a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
-        </li>
-        <li class="navigation-item"><a class="navigation-link" href="#"><span class="visually-hidden">Поставить
-              лайк</span></a></li>
-        <li class="navigation-item"><button class="button" type="button">Хочу сюда!</button>
-        </li>
+      <menu class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link navigation-link-current">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-item"><a class="navigation-link" href="#">
+          <img class="icon" src="images/header-case/search.svg" width="18.05" height="18.1"  alt="Поиск"></a>
+          </li>
+          <li class="navigation-item"><a class="navigation-link" href="#"><img class="icon" src="images/header-case/favorite.svg" width="18.05" height="17" alt="">
+                </a></li>
+          <li class="navigation-item"><button class="button" type="button">Хочу сюда!</button>
+          </li>
+        </ul>
       </menu>
     </nav>
   </header>
   <main class="main-index">
-    <div class="icon">
+    <div class="welcome-bg">
       <h1 class="visually-hidden">Добро пожаловать в великолепную Седону!</h1>
       <img class="image" src="images\welcome.svg" width="456.7" height="350.57" alt="Потому что большой каньон остой">
     </div>
-    <section class="description">
+    <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <strong class="description-item">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
-      <p class="description-item">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <div class="advantages-header" ><strong>Седона - небольшой городок в Аризоне, заслуживающий большего!</strong></div>
+      <p class="advantages-main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       <ol class="advantages-list">
         <li class="advantages-item">
-          <h3 class="advantages-title">Настоящий городок</h3>
+          <h3 class="advantages-title main-title">Настоящий городок</h3>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           <img class="image" src="images/cards-case/photo-1.jpg" width="800" height="384" alt="Городок Седоны">
-          <ul>
-            <li class="advantages-item">
-              <h3 class="advantages-title">Жилье</h3>
+          <ul class="advantages-list advantages-sublist">
+            <li class="advantages-item advantages-subitem">
+              <h4 class="advantages-title">Жилье</h4>
               <img class="advantages-icon" src="images/advantage-case/house.svg" width="74.7" height="72" alt="Жилье">
               <p class="advantages-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages-item">
-              <h3 class="advantages-title">Еда</h3>
+            <li class="advantages-item advantages-subitem">
+              <h4 class="advantages-title">Еда</h4>
               <img class="advantages-icon" src="images/advantage-case/food.svg" width="73.81" height="70" alt="Еда">
               <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantages-item">
-              <h3 class="advantages-title">Сувениры</h3>
+            <li class="advantages-item advantages-subitem">
+              <h4 class="advantages-title">Сувениры</h4>
               <img class="advantages-icon" src="images/advantage-case/gift.svg" width="64" height="75.95" alt="Сувенир">
               <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </li>
         <li class="advantages-item">
-          <h3 class="advantages-title">Там есть мост дьявола</h3>
+          <h3 class="advantages-title main-title">Там есть мост дьявола</h3>
           <img class="image" src="images/cards-case/photo-2.jpg" width="800" height="384" alt="Настоящий каньон">
           <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
@@ -81,7 +84,7 @@
       <h3 class="search-title">Заинтересовались?</h3>
       <p class="search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
-      <button class="search-button popup" type="button">Поиск гостиницы В седоне</button>
+      <button class="button button-popup" type="button">Поиск гостиницы В седоне</button>
     </section>
     <section class="subscribe">
       <h3 class="subscribe-title"><label for="email">Подпишитесь на рассылку</label></h3>
@@ -90,7 +93,7 @@
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="subscribe-input" name="email" id="email" type="email" placeholder="Ваш e-mail" required
           aria-describedby="email-desc">
-        <button class="subscribe-button" type="submit">Подписаться</button>
+        <button class="subscribe-button button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
