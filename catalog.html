@@ -11,7 +11,7 @@
   <div class="container">
     <header class="page-header">
       <div>
-        <img class="logo logo-sedona" src="images/header-case/logo_sedona.svg" width="139" height="70"
+        <img class="logo logo-sedona" src="images/header-case/logo_sedona.svg" width="139" height="74"
           alt="Логотип Седоны">
       </div>
       <nav class="navigation">
@@ -56,19 +56,19 @@
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="product-group" checked>
-                    Бассейн
+                    &ensp;Бассейн
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="product-group" checked>
-                    Парковка
+                    &ensp;Парковка
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="product-group">
-                    WI-FI
+                    &ensp;WI-FI
                   </label>
                 </li>
               </ul>
@@ -79,26 +79,26 @@
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="Hotel" checked>
-                    Гостиница
+                    &ensp;Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="Motel">
-                    Мотель
+                    &ensp;Мотель
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="Apartaments">
-                    Апартаменты
+                    &ensp;Апартаменты
                   </label>
                 </li>
               </ul>
             </fieldset>
             <div class="range-cost">
               <fieldset class="cost">
-                <legend class="catalog-filter-content-title" lang="en">Стоимость, ₽:</legend>
+                <legend class="catalog-filter-content-title">Стоимость, ₽:</legend>
                 <p class="cost_inputs">
                   <label class="cost_label" lang="en">от
                     <input class="cost_input" type="number" value="0" min="0" max="12000" step="250" id="min-range">
@@ -127,22 +127,34 @@
         </div>
       </section>
       <section class="product">
-        <p class="script-title"><span>Найдено гостиниц:<b class="script-title script-count">38</b></span></p>
+        <div class="sorting-block">
+        <p class="script-title"><span>Найдено гостиниц:<b class="script-title script-count">&thinsp;38</b></span></p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <div class="button-list"> 111
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать что-то</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+        <fieldset class="menu-title-panorama-table">
+          <legend class="visually-hidden">Вид</legend>
+          <label>
+            <input type="radio" name="appearance" value="cards" checked>
+            <img src="../images/menu_case/icon-list.svg" aria-labelledby="cards-title" fill="black" width="16"
+              height="14">
+            <title id="cards-title">Карточками</title>
+          </label>
+          <label>
+            <input type="radio" name="appearance" value="cards">
+            <img src="../images/menu_case/icon-slideshow.svg" aria-labelledby="panorama-title" fill="black" width="16"
+              height="14" alt="Карточками">
+            <title id="panorama-title">Панорамой</title>
+          </label>
+          <label>
+            <input type="radio" name="appearance" value="cards">
+            <img src="../images/menu_case/icon-table.svg" aria-labelledby="table-title" fill="black" width="16"
+              height="14" alt="Карточками">
+            <title id="table-title">Таблицей</title>
+          </label>
+        </fieldset>
         </div>
         <ul class="product-list">
           <li class="product-card">
