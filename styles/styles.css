@@ -123,6 +123,18 @@ p {
     text-align: center;
 }
 
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #dbdbdb;
+}
+
+
+
 .navigation-user {
     max-width: 264px;
     margin: 0 0 0 auto;
@@ -137,6 +149,7 @@ p {
 }
 
 .welcome-bg {
+    position: relative;
     background-image: url("../images/background-case/index.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -226,7 +239,7 @@ p {
 }
 
 .subfirst-advantages-item {
-    padding: 92px 85px;
+    padding: 92px 65px;
 }
 
 .advantages-image {
@@ -269,8 +282,8 @@ p {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-
 }
+
 
 .main-title {
     color: #ffffff;
@@ -279,8 +292,6 @@ p {
 
 .advantages-description {
     color: #FFFFFF;
-    margin: 0;
-    margin-top: 81px;
 }
 
 .subadvantages-description {
@@ -479,7 +490,13 @@ p {
     margin-bottom: 34px;
 }
 
+.pagination-link,
+.pagination-current{
+    position: relative;
+}
+
 .breadcrumbs {
+    position: relative;
     list-style-type: none;
     font-weight: 400;
     font-size: 16px;
@@ -490,6 +507,11 @@ p {
     margin: 0;
     padding: 0;
     margin: 10px 0 40px;
+}
+
+.breadcrumbs-icon {
+    position:absolute;
+    left:22px;
 }
 
 .breadcrumbs-item:not(:first-child) {
@@ -510,7 +532,9 @@ p {
 .catalog-filter-content-group {
     margin: 0;
     padding: 0;
+    border: #fff;
 }
+
 
 .catalog-filter-content-list {
     list-style-type: none;
@@ -537,10 +561,11 @@ p {
 .cost {
     padding: 0;
     margin: 0;
+    border:#fff;
 }
 
 .filter-content-button {
-    margin-left: 70px;
+    margin-left: 115px;
     align-self: flex-end;
 }
 
@@ -583,6 +608,7 @@ p {
 
 .menu-title-panorama-table {
     margin-left: auto;
+    border: #fff;
 }
 
 .product-list {
@@ -659,10 +685,27 @@ p {
     display: flex;
     gap: 8px;
     margin: 96px 270px 25px 73px;
+    margin-right:auto;
     padding: 0;
 }
 
 .pagination-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #82B3D3;
+    border: 1px solid #82B3D3;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pagination-current {
     display: block;
     width: 60px;
     height: 60px;
@@ -692,10 +735,13 @@ p {
 
 .hotels-form-select {
     margin-left: 60px;
-    border: 1px solid lightgray;
-    padding: 10px;
-    padding-right: 70px;
-    border-radius: 3px;
+    margin-right:71px;
+    padding: 14px;
+    padding-right: 130px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 
 .select-control {
@@ -722,5 +768,155 @@ p {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
+menu .navigation-item:nth-child(2) {
+    position: relative;
+    margin-right: 21px;
+}
+
+.decorate-element-hr {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #7DB54F;
+    background-color: #7DB54F;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    width: 20px;
+    height: 20px;
+    left: 24px;
+    top: 15px;
+}
+
+/* Динамические эффекты */
+.button-popup:hover,
+.button-popup:focus,
+.button-hover:hover {
+    background-color: #615048;
+}
+
+.subscribe-button:hover,
+.filter-content-button-submit:hover,
+.product-button:hover,
+.subscribe-button:focus,
+.filter-content-button-submit:focus,
+.product-button:focus {
+    background-color: #68A2CA
+}
+
+.filter-content-button-reset:hover .filter-content-button-reset:focus {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.product-button-selected:hover,
+.product-button-selected:focus {
+    background-color: #6C9E42;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.product-description-link:hover,
+.product-description-link:focus {
+    background-color: #615048;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+    background-color: #68A2CA;
+}
+
+.pagination-link:active,
+.product-description-link:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #82B3D3;
+}
+
+.contacts-number-link:hover,
+.contacts-number-link:focus {
+    color: #756157;
+}
+
+.contacts-number-link:active {
+    color: rgba(117, 97, 87, 0.3)
+}
+
+.link-HtmlAcademy {
+    fill:#000;
+}
+
+.link-HtmlAcademy svg:hover,
+.link-HtmlAcademy svg:focus {
+    fill: #756157;
+}
+
+.link-HtmlAcademy svg:active {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+.contacts-link svg:hover,
+.contacts-link svg:focus {
+    fill: #68A2CA;
+}
+
+.contacts-link svg:active {
+    fill:rgba(104, 162, 202, 0.3);
+}
+
+
+/* Псевдоэлементы */
+.advantages-description::before {
+    display: block;
+    counter-increment: feature;
+    content:" — №" counter(feature) "—";
+    margin-top:30px;
+    margin-bottom:30px; 
+}
+
+.advantages-list {
+    counter-reset:feature
+}
+
+.icon {
+    fill: #000;
+    stroke: none;
+}
+
+.decorate {
+    position: absolute;
+    top:calc(100% - 57px);
+}
+
+.navigation-item-current {
+    position: relative;
+}
+
+.navigation-item-current-dc {
+    position: absolute;
+    width:68px;
+    top:48px;
+    left:0px;
+}
+
+.navigation-item-current-dc-1 {
+    position: absolute;
+    width:92px;
+    top:48px;
+    left:0px;
+}
+
+/* Дизайн radio и check кнопок */
