@@ -57,12 +57,14 @@
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <img class="breadcrumbs-logo" src="images/breadcrumbs-case/home.svg" width="12" height="11.7"
-                alt="Главная">
+              <svg class="breadcrumbs-logo" width="13" height="13" viewBox="0 0 13 13" fill="#fff">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" />
+              </svg>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
           <li class="breadcrumbs-icon"><svg width="6" height="9" viewBox="0 0 6 9" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -80,19 +82,22 @@
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="product-group" checked>
+                    <span class="control-mark-checkbox"></span>
                     <span class="control-label">&ensp;Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="product-group" checked>
-                    &ensp;Парковка
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">&ensp;Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="product-group">
-                    &ensp;WI-FI
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">&ensp;WI-FI</span>
                   </label>
                 </li>
               </ul>
@@ -103,19 +108,22 @@
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="Hotel" checked>
-                    &ensp;Гостиница
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">&ensp;Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="Motel">
-                    &ensp;Мотель
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">&ensp;Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-content-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="Apartaments">
-                    &ensp;Апартаменты
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">&ensp;Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -152,7 +160,14 @@
       </section>
       <section class="product">
         <div class="sorting-block">
-          <p class="script-title"><span>Найдено гостиниц:<b class="script-title script-count">&thinsp;38</b></span></p>
+          <svg class="sorting-block-galochka" width="12" height="9" viewBox="0 0 12 9" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m6.675 7.713 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"
+              fill="#000" />
+          </svg>
+          <p class="script-title"><span>Найдено гостиниц:<b class="script-title script-count">&thinsp;38</b></span>
+          </p>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
@@ -161,7 +176,7 @@
           <fieldset class="menu-title-panorama-table">
             <legend class="visually-hidden">Вид</legend>
             <label class="label-menu">
-              <input type="radio" name="appearance" value="cards">
+              <input class="menu-input" type="radio" name="appearance" value="cards">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
                   fill="#000" />
@@ -169,14 +184,15 @@
               <title id="table-title">Таблицей</title>
             </label>
             <label class="label-menu">
-              <input type="radio" name="appearance" value="cards">
+              <input class="menu-input" type="radio" name="appearance" value="cards">
+              <span class="label-menu-effect"></span>
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
               </svg>
               <title id="panorama-title">Панорамой</title>
             </label>
             <label class="label-menu">
-              <input type="radio" name="appearance" value="cards" checked>
+              <input class="menu-input" type="radio" name="appearance" value="cards" checked>
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
@@ -276,25 +292,30 @@
         </ul>
         <ol class="pagination">
           <li class="pagination-item">
-            <a class="pagination-current"><span class="decorate-lk">1</span></a>
+            <a class="pagination-current">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#"><span class="decorate-lk">2</span></a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#"><span class="decorate-lk">3</span></a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#"><span class="decorate-lk">4</span></a>
+            <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#"><span class="decorate-lk">...</span></a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#"><span class="decorate-lk">10</span></a>
+            <a class="pagination-link" href="#">10</a>
           </li>
         </ol>
         <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="get">
+          <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m6.675 7.713 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"
+              fill="#000" />
+          </svg>
           <label>Гостиниц на странице:
             <select class="hotels-form-select">
               <option value="1">1</option>
