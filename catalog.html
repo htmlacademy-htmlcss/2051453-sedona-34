@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.svg">
 </head>
 
 <body>
@@ -56,7 +57,8 @@
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <svg class="breadcrumbs-logo" width="13" height="13" viewBox="0 0 13 13" fill="#fff">
+              <svg class="breadcrumbs-logo" width="13" height="13" viewBox="0 0 13 13" fill="#fff" aria-hidden="true"
+                focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" />
               </svg>
@@ -160,7 +162,7 @@
       <section class="product">
         <div class="sorting-block">
           <svg class="sorting-block-galochka" width="12" height="9" viewBox="0 0 12 9" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path
               d="m6.675 7.713 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"
               fill="#000" />
@@ -174,30 +176,30 @@
           </select>
           <fieldset class="menu-title-panorama-table">
             <legend class="visually-hidden">Вид</legend>
-            <label class="label-menu">
-              <input class="menu-input" type="radio" name="appearance" value="cards">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
-                  fill="#000" />
-              </svg>
-              <title id="table-title">Таблицей</title>
+            <label class="label-menu" aria-labelledby="table-title">
+              <input class="menu-input" id="table-title" class="menu-input" type="radio" name="appearance"
+                value="cards">
+              <span><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
+                    fill="#000" />
+                </svg></span>
             </label>
-            <label class="label-menu">
-              <input class="menu-input" type="radio" name="appearance" value="cards">
+            <label class="label-menu" aria-labelledby="panorama-title">
+              <input class="menu-input" type="radio" name="appearance" value="cards" id="panorama-title">
               <span class="label-menu-effect"></span>
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
-              </svg>
-              <title id="panorama-title">Панорамой</title>
+              <span><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
+                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
+                </svg></span>
             </label>
-            <label class="label-menu">
-              <input class="menu-input" type="radio" name="appearance" value="cards" checked>
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
-                  fill="#000" />
-              </svg>
-              <title id="cards-title">Карточками</title>
+            <label class="label-menu" aria-labelledby="cards-title">
+              <input class="menu-input" type="radio" name="appearance" value="cards" id="cards-title" checked>
+              <span><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
+                  <path
+                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
+                    fill="#000" />
+                </svg></span>
             </label>
           </fieldset>
         </div>
@@ -211,16 +213,20 @@
             <a class="product-description-link" href="#">подробнее</a>
             <button class="button product-button" type="button">В избранное</button>
             <div class="product-stars"><span class="visually-hidden">4 звезды</span>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
             </div>
@@ -235,16 +241,20 @@
             <a class="product-description-link" href="#">подробнее</a>
             <button class="button product-button product-button-selected" type="button">В избранном</button>
             <div class="product-stars"><span class="visually-hidden">4 звезды</span>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
             </div>
@@ -259,13 +269,16 @@
             <a class="product-description-link" href="#">подробнее</a>
             <button class="button product-button" type="button">В избранное</button>
             <div class="product-stars"><span class="visually-hidden">3 звезды</span>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
             </div>
@@ -279,10 +292,12 @@
             <a class="product-description-link" href="#">подробнее</a>
             <button class="button product-button" type="button">В избранное</button>
             <div class="product-stars"><span class="visually-hidden">2 звезды</span>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
-              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
                 <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
               </svg>
             </div>
@@ -310,7 +325,8 @@
           </li>
         </ol>
         <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="get">
-          <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" focusable="false">
             <path
               d="m6.675 7.713 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"
               fill="#000" />
@@ -342,6 +358,7 @@
     </main>
     <footer class="page-footer">
       <section class="contacts">
+        <h3 class="visually-hidden">Контакты</h3>
         <ul class="contacts-list">
           <li class="contacts-link">
             <a class="contacts-link-VK" href="#">
