@@ -1618,7 +1618,7 @@ menu .navigation-item:nth-child(2) {
     left: 4px;
     width: 12px;
     height: 10px;
-    background-image: url("../images/galochka.svg");
+    background-image: url("../images/check-element.svg");
     content: "";
 }
 
