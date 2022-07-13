@@ -851,7 +851,6 @@ menu .navigation-item:nth-child(2) {
 
 .filter-content-button-reset:hover .filter-content-button-reset:focus {
     background-color: rgba(0, 0, 0, 0);
-    outline: none;
 }
 
 .product-button-selected:hover,
@@ -867,11 +866,13 @@ menu .navigation-item:nth-child(2) {
 .product-description-link:hover,
 .product-description-link:focus {
     background-color: #615048;
+    outline:none;
 }
 
 .pagination-link:hover,
 .pagination-link:focus {
     background-color: #68A2CA;
+    outline:none;
 }
 
 .pagination-link:active,
@@ -1159,6 +1160,9 @@ menu .navigation-item:nth-child(2) {
     color: #fff
 }
 
+.range-slider__input {
+    margin:0;
+}
 /* Оформление радио кнопок */
 
 .control {
@@ -1608,13 +1612,13 @@ menu .navigation-item:nth-child(2) {
     left: 0px;
 }
 
-.control-input[type="checkbox"]:checked+.control-mark-checkbox::before {
+.control-input[type="checkbox"]:checked + .control-mark-checkbox::before {
     position: absolute;
     top: 6px;
     left: 4px;
     width: 12px;
     height: 10px;
-    background-image: url("/images/Galochka.svg");
+    background-image: url("../images/galochka.svg");
     content: "";
 }
 
@@ -1676,10 +1680,47 @@ menu .navigation-item:nth-child(2) {
 /* Ховер-эффекты для меню */
 
 .label-menu {
-    display:flex;
+    position: relative;
 }
 
-.label-menu:hover,
-.label-menu:active {
+.menu-input:checked + span::after {
+    position:absolute;
+    content:"";
+    width:48px;
+    height:55px;
+    outline:2px solid #68A2CA;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    top:0;
+    left:0;
+    border-radius:2px;
+}
+
+.menu-input:active + span::after,
+.menu-input:hover + span::after{
+    position:absolute;
+    content:"";
+    width:48px;
+    height:55px;
     outline: 2px solid #000000;
+    top:0;
+    left:0;
+    border-radius:2px;
+}
+
+.button-hover:focus {
+    outline:none;
+    background-color:#615048;
+}
+
+.filter-content-button-submit:focus {
+    background-color:#68A2CA;
+    outline:none;
+}
+
+.filter-content-button-reset:focus {
+    outline: 3px solid #83B3D3
+}
+
+.filter-content-button-reset:hover {
+    opacity:0.6;
 }
