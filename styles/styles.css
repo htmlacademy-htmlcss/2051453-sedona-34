@@ -345,7 +345,7 @@ p {
     color: #FFFFFF;
     text-align: center;
     height: 411px;
-    background-color: #FFFFFF;
+    background-color: rgba(131, 179, 211, 0.3);
     background-image: url("../images/background-case/subscribe.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -362,9 +362,9 @@ p {
 }
 
 .pagination-link {
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .subscribe-title {
@@ -463,7 +463,9 @@ p {
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
-    padding: 35px 70px;
+    padding: 35px 70px 70px 70px;
+    box-sizing: border-box;
+    width: 1200px;
 }
 
 .filter-content-title {
@@ -518,13 +520,13 @@ p {
 .breadcrumbs-logo:hover,
 .breadcrumbs-link:hover {
     color: rgba(255, 255, 255, 0.6);
-    fill:rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-logo:active,
 .breadcrumbs-link:active {
     color: rgba(255, 255, 255, 0.3);
-    fill:rgba(255, 255, 255, 0.3);
+    fill: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-icon {
@@ -572,7 +574,6 @@ p {
 }
 
 .range-cost {
-    margin-left: 160px;
     align-self: flex-end;
 }
 
@@ -583,8 +584,8 @@ p {
 }
 
 .filter-content-button {
-    margin-left: 90px;
     align-self: flex-end;
+    margin-left: 120px;
 }
 
 .filter-content-button-submit {
@@ -730,7 +731,7 @@ p {
 }
 
 .pagination-current {
-    display:inline-flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 60px;
@@ -836,7 +837,7 @@ menu .navigation-item:nth-child(2) {
 .button-popup:focus,
 .button-hover:hover {
     background-color: #615048;
-    outline:none;
+    outline: none;
 }
 
 .subscribe-button:hover,
@@ -846,7 +847,7 @@ menu .navigation-item:nth-child(2) {
 .filter-content-button-submit:focus,
 .product-button:focus {
     background-color: #68A2CA;
-    outline:none;
+    outline: none;
 }
 
 .filter-content-button-reset:hover .filter-content-button-reset:focus {
@@ -856,7 +857,7 @@ menu .navigation-item:nth-child(2) {
 .product-button-selected:hover,
 .product-button-selected:focus {
     background-color: #6C9E42;
-    outline:none;
+    outline: none;
 }
 
 .button:active {
@@ -866,13 +867,13 @@ menu .navigation-item:nth-child(2) {
 .product-description-link:hover,
 .product-description-link:focus {
     background-color: #615048;
-    outline:none;
+    outline: none;
 }
 
 .pagination-link:hover,
 .pagination-link:focus {
     background-color: #68A2CA;
-    outline:none;
+    outline: none;
 }
 
 .pagination-link:active,
@@ -1161,14 +1162,16 @@ menu .navigation-item:nth-child(2) {
 }
 
 .range-slider__input {
-    margin:0;
+    margin: 0;
 }
+
 /* Оформление радио кнопок */
 
 .control {
     position: relative;
     display: block;
     padding-left: 19px;
+    min-width: 140px;
 }
 
 /* Модальное окно */
@@ -1217,7 +1220,7 @@ menu .navigation-item:nth-child(2) {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    outline-color:#f2f2f2;
+    outline-color: #f2f2f2;
 }
 
 .modal-title {
@@ -1383,7 +1386,7 @@ menu .navigation-item:nth-child(2) {
 .modal-counter-babys-circle:hover+.modal-counter-babys-description {
     background-color: #333;
     opacity: 1;
-    display:inline-flex;
+    display: inline-flex;
 }
 
 .modal-counter-babys-description {
@@ -1405,7 +1408,7 @@ menu .navigation-item:nth-child(2) {
     left: -60px;
     box-sizing: border-box;
     opacity: 0;
-    display:none;
+    display: none;
 }
 
 .modal-counter-babys-decorate {
@@ -1489,18 +1492,18 @@ menu .navigation-item:nth-child(2) {
 }
 
 .modal-close-button:hover {
-    background-color:#e6e6e6;
+    background-color: #e6e6e6;
 }
 
 .modal-close-button:focus {
     outline: 3px solid #83B3D3;
-    background-color:#E6E6E6;
+    background-color: #E6E6E6;
 }
 
 .modal-close-button:active {
-    background-color:#e6e6e6;
-    outline:#e6e6e6;
-    opacity:0.3;
+    background-color: #e6e6e6;
+    outline: #e6e6e6;
+    opacity: 0.3;
 }
 
 .date:hover {
@@ -1510,7 +1513,7 @@ menu .navigation-item:nth-child(2) {
 .date:focus {
     background-color: #e6e6e6;
     outline: 3px solid #83B3D3;
-    border-radius:4px;
+    border-radius: 4px;
 }
 
 .date:active {
@@ -1520,7 +1523,7 @@ menu .navigation-item:nth-child(2) {
 }
 
 .button-modal:hover {
-    background-color:#68A2CA;
+    background-color: #68A2CA;
 }
 
 .button-modal:focus {
@@ -1537,9 +1540,9 @@ menu .navigation-item:nth-child(2) {
     background-color: #68A2CA;
 }
 
-/* .modal-container {
+.modal-container {
     display: none;
-} */
+}
 
 /* Оформление текстовых форма */
 
@@ -1590,6 +1593,7 @@ menu .navigation-item:nth-child(2) {
 
 .cost {
     margin-bottom: 32px;
+    margin-left: 105px;
 }
 
 /* офомление радио-кнопок */
@@ -1612,7 +1616,7 @@ menu .navigation-item:nth-child(2) {
     left: 0px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark-checkbox::before {
+.control-input[type="checkbox"]:checked+.control-mark-checkbox::before {
     position: absolute;
     top: 6px;
     left: 4px;
@@ -1683,38 +1687,38 @@ menu .navigation-item:nth-child(2) {
     position: relative;
 }
 
-.menu-input:checked + span::after {
-    position:absolute;
-    content:"";
-    width:48px;
-    height:55px;
-    outline:2px solid #68A2CA;
+.menu-input:checked+span::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 55px;
+    outline: 2px solid #68A2CA;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    top:0;
-    left:0;
-    border-radius:2px;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
 }
 
-.menu-input:active + span::after,
-.menu-input:hover + span::after{
-    position:absolute;
-    content:"";
-    width:48px;
-    height:55px;
+.menu-input:active+span::after,
+.menu-input:hover+span::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 55px;
     outline: 2px solid #000000;
-    top:0;
-    left:0;
-    border-radius:2px;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
 }
 
 .button-hover:focus {
-    outline:none;
-    background-color:#615048;
+    outline: none;
+    background-color: #615048;
 }
 
 .filter-content-button-submit:focus {
-    background-color:#68A2CA;
-    outline:none;
+    background-color: #68A2CA;
+    outline: none;
 }
 
 .filter-content-button-reset:focus {
@@ -1722,5 +1726,14 @@ menu .navigation-item:nth-child(2) {
 }
 
 .filter-content-button-reset:hover {
-    opacity:0.6;
+    opacity: 0.6;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #756157;
+}
+
+.navigation-link:active {
+    color: rgba(117, 97, 87, 0.3);
 }
