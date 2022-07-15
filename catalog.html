@@ -5,15 +5,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.svg">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="container">
     <header class="page-header">
-      <div>
-        <img class="logo logo-sedona" src="images/header-case/logo_sedona.svg" width="139" height="74"
-          alt="Логотип Седоны">
+      <div><a href="index.html">
+          <img class="logo logo-sedona" src="images/header-case/logo_sedona.svg" width="139" height="74"
+            alt="Логотип Седоны">
+        </a>
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -140,18 +141,22 @@
                     <input class="cost__input" type="number" value="9000" min="0" max="12000" />
                   </label>
                 </p>
-                <p class="range-slider cost__range" style="--first-val: 0%; --second-val: 75%;">
-                  <input class="range-slider__input" type="range" min="0" max="12000" value="0" step="100"
-                    aria-label="Min range" />
-                  <input class="range-slider__input" type="range" min="0" max="12000" value="9000" step="100"
-                    aria-label="Max range" />
+                <p class="range-slider cost__range" style="--first-val: 0%; --second-val: 75%;" id="min-max">
+                  <label>
+                    <input class="range-slider__input" type="range" min="0" max="12000" value="0" step="100"
+                      aria-labelledby="min-max" />
+                  </label>
+                  <label>
+                    <input class="range-slider__input" type="range" min="0" max="12000" value="9000" step="100"
+                      aria-labelledby="min-max" />
+                  </label>
                 </p>
               </fieldset>
             </div>
             <div class="filter-content-button">
               <button class="filter-content-button-submit button" type="submit">
                 Применить
-              </button><br>
+              </button>
               <button class="filter-content-button-reset button" type="reset">
                 Сбросить
               </button>
@@ -177,8 +182,7 @@
           <fieldset class="menu-title-panorama-table">
             <legend class="visually-hidden">Вид</legend>
             <label class="label-menu" aria-labelledby="table-title">
-              <input class="menu-input" id="table-title" class="menu-input" type="radio" name="appearance"
-                value="cards">
+              <input class="menu-input" id="table-title" type="radio" name="appearance" value="cards">
               <span><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
                     fill="#000" />
@@ -350,6 +354,7 @@
           спама, честное
           бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="email">Поле для почты</label>
           <input class="subscribe-input" name="email" id="email" type="email" placeholder="Ваш e-mail" required
             aria-describedby="email-desc">
           <button class="button subscribe-button" type="submit">Подписаться</button>
